@@ -29,3 +29,5 @@ connetction bölümüne prometheus-kube-prometheus-prometheus.monitoring.svc.clu
 Sol taraftaki menüde alerting e basup alert rules bölümüne giriyoruz 
 New alert rule diyoruz 
 Define query and alert condition bölümüne bu komutu girip increase(kube_deployment_metadata_generation{deployment="nginx-deployment"}[1m]) herhangi bir pod restartında bize uyarı göndericek alert rule u oluşturuyoruz. 
+![image](https://github.com/user-attachments/assets/eb2c35bb-4b83-4f70-9c71-915ff027177f)
+
