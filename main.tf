@@ -16,7 +16,7 @@ resource "google_container_cluster" "primary" {
 }
 
 resource "google_container_node_pool" "main_pool" {
-  name     = "main-pool2"
+  name     = "main-pool"
   location = "europe-west1"
   cluster  = google_container_cluster.primary.name
 
@@ -34,7 +34,7 @@ resource "google_container_node_pool" "main_pool" {
 }
 
 resource "google_container_node_pool" "application_pool" {
-  name     = "application-pool2"
+  name     = "application-pool"
   location = "europe-west1"
   cluster  = google_container_cluster.primary.name
 
